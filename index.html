@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="2style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-bar">
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <div class="logo-header">
+                <a href="#">Nocent</a>
+            </div>
+
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#fun">Projects</a></li>
+            <li class="dropdown">
+        <a href="#" class="dropbtn">Contact</a>
+            <div class="dropdown-content">  
+                <p>Facebook: <a href="https://web.facebook.com/chanymaster69/" target="_blank"><span class="asdasd" style="color: #333;"> FB Profile</span></a></p>
+                <p>Instagram: <a href="https://www.instagram.com/itsmechanyy/" target="_blank">IG Profile</a></p>
+            </div>
+            </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="intro-flex">
+        <div class="left-side">
+            <img src="pics/amen.jpg" alt="Profile Picture" class="hello-image">
+            <a href="https://web.facebook.com/chanymaster69/" class="social-link" target="_blank">
+                <img src="pics/fb.webp" alt="Facebook" class="social-logo" title="Facebook Profile">
+                </a>
+                </a>
+                <a href="https://www.instagram.com/itsmechanyy/" class="social-link" target="_blank">
+                <img src="pics/ig.webp" alt="Instagram" class="social-logo" title="Instagram Profile">
+                </a>
+                <a href="https://discordapp.com/users/477740226857664512" class="social-link" target="_blank">
+                <img src="pics/discord.webp" alt="Discord" class="social-logo" title="Discord Profile">
+                </a>
+        </div>
+
+        <div class="right-side">
+            <p class="front-page animate-text">Hello Client!</p>
+            <p class="below-hello animated-paragraph">
+                Hi, my name is <span class="highlight">Cristian Ray Maloles</span>, and I’m an aspiring <span class="highlight">Web Developer</span> from St. Paul University at San Miguel where creativity meets functionality in the world of web design!<br><br>
+                I am passionate about crafting user-friendly websites that bring ideas to life. Explore my work and join me on this journey of <span class="highlight">coding</span>, <span class="highlight">creativity</span>, and <span class="highlight">continuous learning</span>!
+            </p>
+        </div>
+    </div>
+
+    <div id="about" class="section">
+        <div class="photo-gallery">
+            <img src="pics/kick.jpg" alt="Picture 1" class="gallery-pic">
+            <img src="pics/amen2.jpg" alt="Picture 4" class="gallery-pic">
+            <img src="pics/fbt.jpg" alt="Picture 2" class="gallery-pic">
+        </div>
+
+        <h2 class="section-title animate-text">About Me</h2>
+        <p class="animated-paragraph">
+            Right now, I’m focused on improving my skills and building projects for my portfolio. I’m always curious to learn more and turning ideas into interactive digital experiences.<br><br>
+            When I’m not coding, I enjoy playing soccer, practicing guitar, or exploring on hardware. I’m looking forward to growing as a developer and contributing to meaningful projects.
+        </p>
+    </div>
+
+    <div id="fun" class="section">
+        <h2 class="section-title animate-text">Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                        <h3 class="project-title">Library Management System (LMS)</h3>
+                            <p class="project-desc">Focusing librarians to manage books by adding, updating, or removing entries in the
+                            catalog and let students borrow and return books, with the system tracking due dates and
+                            sending overdue reminders.</p>
+                </div>
+            <div class="project-card">
+                    <h3 class="project-title">Meeting Scheduler Application (MSA)</h3>
+                        <p class="project-desc">Store meeting and user data securely in a database, and a flexible application that can be
+                        expanded with advanced features like Notifications, Enchanced UI, etc.</p>
+            </div>
+                <div class="project-card">
+                        <h3 class="project-title">HTML&CSS Website</h3>
+                        <p class="project-desc">A personal portfolio website showcasing my skills, projects, and passion for web development. Designed to highlight creativity, functionality, and continuous growth in the tech space.
+                        </p>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

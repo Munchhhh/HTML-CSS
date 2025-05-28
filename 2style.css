@@ -1,0 +1,354 @@
+html {
+    scroll-behavior: smooth;
+}
+#about {
+    scroll-margin-top: 80px;
+    padding: 80px 10%;
+    background: linear-gradient(#111111, #c5c6c7, #FCED);
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+#fun {
+    padding: 80px 10%;
+    background: linear-gradient(#FCED, #c5c6c7, #111111);
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+.front-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.front-page {
+    font-family: OpenSans;
+    font-size: 100px;
+    margin: 10px 0 0 0;
+    color: #222;
+}
+
+a {
+    font-family: OpenSans;
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.hello-image {
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+    margin: 20px 0;
+}
+
+.section {
+    padding: 80px 10%;
+    background-color: #f3f3f3;
+    border-top: 1px solid #ccc;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+.hello-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.section {
+    padding: 80px 10%;
+    background-color: #fff;
+    border-top: 2px solid #ccc;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.section p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.intro-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px;
+    gap: 40px;
+    background: linear-gradient(#FCED, #c5c6c7, #111111);
+    text-align: left;
+}
+.intro-flex{
+    overflow: auto;
+}
+
+.left-side {
+    flex: 0 0 250px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.social-link {
+    color: #333;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.social-logo {
+    width: 40px;
+    height: 40px;
+    gap: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease box-shadow 0.3s ease;
+}
+
+.social-logo:hover {
+    color: #333;
+    transform: scale(1.2);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.3);
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 400px;
+    flex: 1;
+    margin-right: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+/*about.css*/
+.photo-gallery {
+  display: flex;
+  gap: 100px;
+  justify-content: center; 
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.gallery-item{
+    width: 160px;
+    height: 160;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+.gallery-item:hover {
+    transform: scale(1.1);
+    z-index:  1;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+.gallery-pic {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.galleryc-caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #444;
+}
+@media (max-width: 600px){
+    .gallery-item{
+        width: 120px;
+        height: auto;
+    }
+}
+.gallery-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-text {
+    animation: fadeUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.animated-paragraph {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    animation: fadeUp 1.2s ease-out forwards;
+    opacity: 0;
+    transition: color 0.3s ease;
+}
+
+.animated-paragraph:hover {
+    color: #000;
+}
+
+.highlight {
+    color: #d89216;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.highlight:hover {
+    color: #fddb0d;
+    background-color: #222;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    animation: fadeUp 1.5s ease-out forwards;
+    opacity: 0;
+}
+.project-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.project-card {
+  background: #fffef2;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 20px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  font-size: 16px;
+  color: #555;
+}
+
+
+ .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropbtn {
+  background-color: #fddb0d;
+  color: #333;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease transform 0.2s;
+}
+
+.dropbtn:hover {
+  transform: scale(1.05s);
+  color: #000;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: color#c5c6c7;
+  border-radius: 10px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dropdown-content a {
+  color: #333 !important;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInDropdown {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
